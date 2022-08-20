@@ -158,8 +158,9 @@ function main() {
       scaleX: SCALE,
       scaleY: SCALE,
       update() {
-        if (face == "up") {
+        if (face == "pipe_up") {
           if (this.x == player.x) {
+            score_value++;
             zzfx(
               ...[
                 1.61,
@@ -184,7 +185,6 @@ function main() {
                 0.31,
               ]
             ); // Random 0
-            score_value++;
           }
         }
         this.advance();
